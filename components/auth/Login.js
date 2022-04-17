@@ -31,9 +31,9 @@ const useStyles = makeStyles((theme) => ({
   },
   upperBox: {
     height: "100vh",
-    maxHeight: "480px",
+    maxHeight: "550px",
     width: "100vw",
-    maxWidth: "600px",
+    maxWidth: "650px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
