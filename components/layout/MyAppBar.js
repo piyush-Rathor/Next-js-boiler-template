@@ -56,9 +56,9 @@ const useStyles = makeStyles((theme) => ({
   search: {
     position: "relative",
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    backgroundColor: alpha(theme.palette.common.white, 0.4),
     "&:hover": {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
+      backgroundColor: alpha(theme.palette.common.white, 0.5),
     },
     marginRight: theme.spacing(2),
     marginLeft: 0,
@@ -143,9 +143,9 @@ const useStyles = makeStyles((theme) => ({
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  backgroundColor: alpha(theme.palette.common.white, 0.4),
   "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    backgroundColor: alpha(theme.palette.common.white, 0.5),
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
@@ -264,7 +264,7 @@ function MyAppBar(props) {
       {/* {currentUser && ( */}
       <MenuItem>
         <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="badge" overlap="rectangular">
+          <Badge badgeContent={4} color="secondary">
             <MailIcon />
           </Badge>
         </IconButton>
@@ -278,7 +278,7 @@ function MyAppBar(props) {
         onClick={handleMenuClose}
       >
         <IconButton color="inherit">
-          <Badge badgeContent={4} color="badge" overlap="rectangular">
+          <Badge badgeContent={4} color="secondary">
             <NotificationsIcon />
           </Badge>
         </IconButton>
@@ -359,7 +359,7 @@ function MyAppBar(props) {
               aria-label="show 4 new mails"
               color="inherit"
             >
-              <Badge badgeContent={4} color="badge" overlap="rectangular">
+              <Badge badgeContent={4} color="secondary">
                 <MailIcon />
               </Badge>
             </IconButton>
@@ -368,7 +368,7 @@ function MyAppBar(props) {
               aria-label="show 17 new notifications"
               color="inherit"
             >
-              <Badge badgeContent={17} color="badge" overlap="rectangular">
+              <Badge badgeContent={17} color="secondary">
                 <NotificationsIcon />
               </Badge>
             </IconButton>

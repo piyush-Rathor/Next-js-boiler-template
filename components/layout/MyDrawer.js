@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     width: 0,
   },
   drawerPaper: {
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.background.paper,
     width: drawerWidth,
   },
   drawerHeader: {

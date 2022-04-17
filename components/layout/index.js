@@ -22,16 +22,15 @@ const Layout = (props) => {
           type: prefersDarkMode ? "dark" : "light",
           background: {
             default: prefersDarkMode ? "#212121" : "#f2f2f2",
-            paper: prefersDarkMode ? "#333333" : "#fff",
+            paper: prefersDarkMode ? blueGrey[900] : "#fff",
           },
           primary: {
-            main: prefersDarkMode ? pink[700] : red[500],
+            main: prefersDarkMode ? pink[700] : "#f40000",
           },
           // primary: blue,
           secondary: {
-            main: prefersDarkMode ? blueGrey[900] : "#fff",
+            main: prefersDarkMode ?blue[900]:blue[600],
           },
-          badge: blue,
         },
       }),
     [prefersDarkMode]
